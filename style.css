@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "SansitaSwashed";
+	src: url('fonts/SansitaSwashed-VariableFont_wght.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url("image/background1.jpg"); /* url : https://pixabay.com/fr/photos/galerie-art-peinture-murale-baroque-3114279/ */
+    background-position: center;
+    background-size: 120% 120%;
+}
+
+
+
+h1 {
+    font-family : "SansitaSwashed";
+    font-size: 4em;
+    text-align: center;
+    letter-spacing: 7px;
+    color: white;
+    text-shadow: black 3px 3px 3px;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+h2 {
+    font-family : "SansitaSwashed";
+    font-size: 2em;
+    text-shadow: black 1px 1px 1px;
+}
+
+p {
+    margin: 0;
+}
+
+.slides {
+    height: 100%;
+    width: 100%;
+}
+
+.slides:hover h2{
+    font-size: 4em;
+    transform: rotate(1turn);
+    border-bottom: solid 10px white;
+
+    /* transition */
+    transition: border-bottom 0.3s 2s, transform 2s, font-size 2s;
+}
+
+
+.center-child {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#slider {
+    height: 600px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: black 7px 7px 5px 2px;
+    /* box-shadow: white 1px 1px 7px 1px; */
+
+
+
+}
+
+#slide1 {
+    background-color: aqua;
+    display: block;
+}
+
+#slide2 {
+    background-color: yellow;
+    display: none;
+
+}
+
+#slide3 {
+    background-color: green;
+    display: none;
+
+}
+
+#slide4 {
+    background-color: red;
+    display: none;
+
+}
+
+#coords{
+    color: white;
+    font-size: 2em;
+}
